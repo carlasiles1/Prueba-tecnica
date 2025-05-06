@@ -1,11 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Agenda Cultural Euskadi</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="/imagenes/otros/escudo.png" alt="logo">
+        </div>
+        <div class="nav-items">
+            <ul class="navbarUl">
+                <li class="navbar-link"><a href="/index.html">Inicio</a></li>
+                <li class="navbar-link"><a href="/eventos.html">Eventos</a></li>
+                <li class="navbar-link"><a href="/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="nav-hamburger" id="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+    <main>
+        <div class="form-section">
+            <div class="container">
+                <h2>Contactanos</h2>
+                <form action="contacto2.html" method="get" class="contact-form">
+
+                    <div class="form-group" >
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="user_name" required />
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="mail">Correo electrónico:</label>
+                        <input type="email" id="mail" name="user_email" required />
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="msg">Mensaje:</label>
+                        <textarea class="textarea" id="msg" name="user_message" required></textarea>
+                    </div>
+                
+                    <div class="form-group">
+                        <label>
+                            <input class="checkbox" type="checkbox" id="checkbox" required>
+                            Acepto las <a href="#">condiciones</a>
+                        </label>
+                    </div>
+                
+                    <button type="submit" class="btn-submit">Enviar mensaje</button>
+                
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/imagenes/otros/escudo.png" alt="logo" class="footer-img">
+                <p>Agenda Cultural Euskadi</p>
+            </div>
+            <div class="footer-links">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/eventos.html">Eventos</a></li>
+                    <li><a href="/contacto.html">Contacto</a></li>
+                    <li><a href="/privacidad.html">Política de Privacidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-envelope"></i> info@agendaeuskadi.com</p>
+                <p><i class="fas fa-phone"></i> +34 618740219</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Agenda Cultural Euskadi - Todos los derechos reservados</p>
+        </div>
+    </footer>
 </body>
+
 </html>

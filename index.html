@@ -1,11 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Agenda Cultural Euskadi</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="/imagenes/otros/escudo.png" alt="logo">
+        </div>
+        <div class="nav-items">
+            <ul class="navbarUl">
+                <li class="navbar-link"><a href="/index.html">Inicio</a></li>
+                <li class="navbar-link"><a href="/eventos.html">Eventos</a></li>
+                <li class="navbar-link"><a href="/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="nav-hamburger" id="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
     
+    <main>
+        <div class="hero">
+            <img src="/imagenes/otros/el-edificio-guggenheim-bilbao-1.jpg" alt="foto-bilbao">
+            <div class="hero-overlay">
+                <h1>Descubre Euskadi</h1>
+                <p>Tu guía para explorar lo mejor de nuestra cultura</p>
+            </div>
+        </div>
+        
+        <div class="nosotros">
+            <h2>Agenda Cultural Euskadi</h2>
+            <h2>Sobre Nosotros</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quas perspiciatis maxime, magni aut distinctio hic. Quas aperiam alias itaque optio laboriosam officia sint cupiditate culpa quos iste. Dolorem, alias?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At praesentium sint nulla quo nesciunt temporibus ratione, obcaecati fugiat voluptatum odio rem perferendis reiciendis quos mollitia omnis quibusdam. Numquam, ipsum architecto?</p>
+        </div>
+        
+        <div class="form-section">
+            <div class="container">
+                <h2>Accede a tu cuenta</h2>
+                <form class="login-form">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Introduce tu email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password" name="password" placeholder="Introduce tu contraseña" required>
+                        <span class="toggle-password" toggle="#password"><i class="fas fa-eye"></i></span>
+                    </div>
+                    <button type="submit" class="btn-login">Iniciar Sesión</button>
+                    <div class="form-footer">
+                        <p>¿No tienes cuenta? <a href="#" id="show-register">Regístrate</a></p>
+                    </div>
+                </form>
+                
+                <form class="register-form" style="display: none;">
+                    <div class="form-group">
+                        <label for="reg-name">Nombre</label>
+                        <input type="text" id="reg-name" name="name" placeholder="Introduce tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-email">Email</label>
+                        <input type="email" id="reg-email" name="email" placeholder="Introduce tu email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-password">Contraseña</label>
+                        <input type="password" id="reg-password" name="password" placeholder="Introduce tu contraseña" required>
+                        <span class="toggle-password" toggle="#password"><i class="fas fa-eye"></i></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-confirm-password">Confirmar Contraseña</label>
+                        <input type="password" id="reg-confirm-password" name="confirm-password" placeholder="Confirma tu contraseña" required>
+                        <span class="toggle-password" toggle="#password"><i class="fas fa-eye"></i></span>
+                    </div>
+                    <button type="submit" class="btn-register">Registrarse</button>
+                    <div class="form-footer">
+                        <p>¿Ya tienes cuenta? <a href="#" id="show-login">Inicia Sesión</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/imagenes/otros/escudo.png" alt="logo" class="footer-img">
+                <p>Agenda Cultural Euskadi</p>
+            </div>
+            <div class="footer-links">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/eventos.html">Eventos</a></li>
+                    <li><a href="/contacto.html">Contacto</a></li>
+                    <li><a href="/privacidad.html">Política de Privacidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-envelope"></i> info@agendaeuskadi.com</p>
+                <p><i class="fas fa-phone"></i> +34 618740219</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Agenda Cultural Euskadi - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script>
+        
+    </script>
 </body>
 </html>

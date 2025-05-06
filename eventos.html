@@ -1,11 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Eventos - Agenda Cultural Euskadi</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="/imagenes/otros/escudo.png" alt="logo">
+        </div>
+        <div class="nav-items">
+            <ul class="navbarUl">
+                <li class="navbar-link"><a href="/index.html">Inicio</a></li>
+                <li class="navbar-link"><a href="/eventos.html">Eventos</a></li>
+                <li class="navbar-link"><a href="/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="nav-hamburger" id="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
     
+    <main>
+        <h2>Agenda Cultural de Euskadi</h2>
+
+        <label for="ciudad">Filtrar por ciudad:</label>
+        <select id="ciudad">
+            <option value="todas">Todas</option>
+            <option value="Bilbao">Bilbao</option>
+            <option value="Vitoria">Vitoria</option>
+            <option value="Donosti">Donosti</option>
+        </select>
+
+        <p>Selecciona el evento si quieres obtener más información</p>
+        
+        <div class="eventos">
+            <div class="fichas">
+                <img class="imgP" src="/imagenes/eventos/1.png" alt="Concierto Chayanne">
+                <h3>Concierto Chayanne</h3>
+                <h3>Bilbao</h3>
+                <p>Fecha: viernes 16 de mayo de 2025</p>
+                <p>Sala: Bilbao Arena Miribilla</p>
+                <p>Hora: 21:30</p>
+                <a href="https://poetasenmayo.com/es/eventos?start=12" class="boton-evento" target="_blank">Más información</a>
+            </div>
+
+            <div class="fichas">
+                <img class="imgP" src="/imagenes/eventos/2.png" alt="Noche blanca">
+                <h3>Noche blanca</h3>
+                <h3>Bilbao</h3>
+                <p>Fecha: 13 y 14 de junio de 2025</p>
+                <a href="https://poetasenmayo.com/es/eventos?start=12" class="boton-evento" target="_blank">Más información</a>
+            </div>
+
+            <div class="fichas">
+                <img class="imgP" src="/imagenes/eventos/3.png" alt="Noche blanca">
+               <h3>Mercado medieval</h3>
+                <h3>Bilbao</h3>
+                <p>Fecha:del 9 al 11 de mayo de 2025</p>
+                <a href="https://poetasenmayo.com/es/eventos?start=12" class="boton-evento" target="_blank">Más información</a>
+            </div>
+
+            <div class="fichas">
+                <img class="imgP" src="/imagenes/eventos/4.png" alt="Noche blanca">
+                <h3>Maratón</h3>
+                <h3>Vitoria</h3>
+                <p>Fecha: may-11 2025</p>
+                <a href="https://poetasenmayo.com/es/eventos?start=12" class="boton-evento" target="_blank">Más información</a>
+            </div>
+
+            <div class="fichas" >
+                <img class="imgP" src="/imagenes/eventos/5.jpg" alt="Noche blanca">
+                <h3>Poesía</h3>
+                <h3>Vitoria</h3>
+                <p>Fecha: 13 y 14 de junio de 2025</p>
+                <a href="https://poetasenmayo.com/es/eventos?start=12" class="boton-evento" target="_blank">Más información</a>
+
+            </div>
+
+            <div class="fichas">
+                <img class="imgP" src="/imagenes/eventos/6.png" alt="Noche blanca">
+                <h3>Nada es lo que parece</h3>
+                <h3>Donosti</h3>
+                <p>Fecha: 8 may-11 may de 2025</p>
+                <a href="https://poetasenmayo.com/es/eventos?start=12" class="boton-evento" target="_blank">Más información</a>
+              
+            </div>
+
+            <div class="fichas">
+                <img class="imgP" src="/imagenes/eventos/7.png" alt="Noche blanca">
+                <h3>Burdina Astintzen Jaialdia</h3>
+                <h3>Donosti</h3>
+                <p>Fecha: 17 de mayo de 2025</p>
+                <a href="https://poetasenmayo.com/es/eventos?start=12" class="boton-evento" target="_blank">Más información</a>
+            </div>
+
+            <div class="fichas">
+                <img class="imgP" src="/imagenes/eventos/8.png" alt="Noche blanca">
+                <h3>Ipuin kontaketa</h3>
+                <h3>Bilbao</h3>
+                <p>Fecha: 17 de mayo de 2025</p>
+                <a href="https://poetasenmayo.com/es/eventos?start=12" class="boton-evento" target="_blank">Más información</a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/images/eventos/escudo.png" alt="logo" class="footer-img">
+                <p>Agenda Cultural Euskadi</p>
+            </div>
+            <div class="footer-links">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/eventos.html">Eventos</a></li>
+                    <li><a href="/contacto.html">Contacto</a></li>
+                    <li><a href="/privacidad.html">Política de Privacidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-envelope"></i> info@agendaeuskadi.com</p>
+                <p><i class="fas fa-phone"></i> +34 618740219</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Agenda Cultural Euskadi - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script>
+
+    </script>
 </body>
 </html>

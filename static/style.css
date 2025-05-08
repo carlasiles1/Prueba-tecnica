@@ -34,13 +34,14 @@ ul {
 }
 
 /* Navbar */
+
 .navbar {
     background-color:var(--blanco);
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5%;
+    padding: 0 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
@@ -71,7 +72,6 @@ ul {
 
 .navbar-link a {
     color:var(--negro);
-    transition: color 0.3s ease;
 }
 
 .navbar-link a:hover {
@@ -86,7 +86,8 @@ ul {
     color: #333;
 }
 
-/* Hero section */
+/* Hero */
+
 .hero {
     position: relative;
     width: 100%;
@@ -129,6 +130,7 @@ ul {
 }
 
 /* nosotros */
+
 .nosotros {
     background-color: var(--blanco);
     padding: 60px 15px;
@@ -149,6 +151,7 @@ ul {
 }
 
 /* Formulario */
+
 .form-section {
     background-color:var(--blanco);
     padding: 60px 0;
@@ -162,15 +165,7 @@ ul {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     padding: 30px;
 }
-.toggle-password {
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    font-size: 1.1rem;
-    color: var(--gris);
-    cursor: pointer;
-    pointer-events: none; /* No hace falta interactuar aún */
-}
+
 
 .form-group {
     position: relative;
@@ -200,7 +195,6 @@ ul {
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 1rem;
-    transition: border-color 0.3s;
 }
 
 .form-group input:focus {
@@ -218,7 +212,6 @@ ul {
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
 .btn-login:hover, .btn-register:hover {
@@ -242,6 +235,7 @@ ul {
 
 
 /* Footer */
+
 footer {
     background-color: #333;
     color:var(--blanco);
@@ -284,10 +278,6 @@ footer {
     margin-bottom: 10px;
 }
 
-.footer-links ul li a {
-    transition: color 0.3s;
-}
-
 .footer-links ul li a:hover {
     color: var(--rojo);
 }
@@ -316,7 +306,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color 0.3s;
 }
 
 .social-icons a:hover {
@@ -410,6 +399,7 @@ main h2 {
 }
 
 /* Estilos para el selector de ciudad */
+
 main label {
     display: block;
     margin: 20px 0 10px;
@@ -461,7 +451,6 @@ main > p {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
 
@@ -485,7 +474,7 @@ main > p {
 .fichas p {
     padding: 5px 15px;
     color: #666;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     margin: 0;
 }
 
@@ -507,6 +496,7 @@ main > p {
 
 
 /*contacto*/
+
 .btn-submit {
     width: 100%;
     padding: 12px;
@@ -517,7 +507,6 @@ main > p {
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
 .form-group input,
@@ -529,5 +518,4 @@ main > p {
     border-radius: 4px; 
     background-color:var(--blanco);
     color: #333;
-    transition: border-color 0.3s ease; 
 }

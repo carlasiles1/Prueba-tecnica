@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agenda Cultural Euskadi</title>
+    <title> Contacto Agenda Cultural Euskadi</title>
+    <meta name="description" content="Contacto agenda cultural Euskadi">
     <link rel="stylesheet" href="/static/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
 </head>
 <body>
     <nav class="navbar">
@@ -19,6 +21,7 @@
                 <li class="navbar-link"><a href="/contacto.html">Contacto</a></li>
             </ul>
         </div>
+        <div class="nav-date" id="fecha-navbar"></div>
         <div class="nav-hamburger" id="hamburger-menu">
             <i class="fas fa-bars"></i>
         </div>
@@ -27,7 +30,7 @@
         <div class="form-section">
             <div class="container">
                 <h2>Contactanos</h2>
-                <form action="contacto2.html" method="get" class="contact-form">
+                <form action="contacto.html" method="get" class="contact-form">
 
                     <div class="form-group" >
                         <label for="name">Nombre:</label>
@@ -46,12 +49,12 @@
                 
                     <div class="form-group">
                         <label>
-                            <input class="checkbox" type="checkbox" id="checkbox" required>
+                            <input class="checkbox" type="checkbox" id="checkbox" >
                             Acepto las <a href="#">condiciones</a>
                         </label>
                     </div>
                 
-                    <button type="submit" class="btn-submit">Enviar mensaje</button>
+                    <button type="submit" class="btn-submit" id="boton-enviar" disabled  >Enviar mensaje</button>
                 
                 </form>
             </div>
@@ -84,9 +87,14 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Agenda Cultural Euskadi - Todos los derechos reservados</p>
+            <p>&copy; 2025 Agenda Cultural Euskadi - Todos los derechos reservados</p>
         </div>
     </footer>
+
+<script src="/js/fecha.js"></script>
+<script src="/js/hamburguesa.js"></script>
+<script src="/js/boton.js"></script>
+
 </body>
 
 </html>
